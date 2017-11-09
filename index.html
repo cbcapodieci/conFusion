@@ -104,81 +104,80 @@
 
     <div class="row row-content">
         <div class="col-12 col-sm-8 offset-md-2">
-        <div class="card-block">
-            <form>
-                <div class="form-group-row">
-                    <div class="col-12">
-                        <div class="card card-inverse card-warning mb-3 text-left">
-                            <h3 id="reservetable" class="card-header">Reserve a Table</h3>
+            <div id="reservetable" class="card">
+                <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                <div class="card-block">
+                    <form>
+                        <div class="form-group row">
+                            <label class="col col-md-2 col-form-label">Number of Guests</label>
+                            <div class="col-md-10">
+                            <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck1">
+                                        1
+                                    </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck2">
+                                        2
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck3">
+                                        3
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck4">
+                                        4
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck5">
+                                        5
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck6">
+                                        6
+                                </label>
+                            </div>
+                            </div>
                         </div>
-                    </div>
-                </div>    
-                <div class="form-group-row">
-                    <div class="col-12 col-sm-8">
-                        <dl class="row">
-                            <dt class="col-sm-3">Number of guests</dt>
-                            <dd class="col-sm-9">
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" id="inlineRadioOptions" value="guest1"> 1
-                                    </label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" id="inlineRadioOptions" value="guest2"> 2
-                                        </label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" id="inlineRadioOptions" value="guest3"> 3
-                                    </label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" id="inlineRadioOptions" value="guest4"> 4
-                                    </label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" id="inlineRadioOptions" value="guest5"> 5
-                                    </label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" id="inlineRadioOptions" value="guest6"> 6
-                                    </label>
-                                </div>
-                            </dd>
-                        </dl>
-                        <div class="row mb-5">
-                            <dt class="col-sm-3">Date and Time</dt>
-                                <div class="col">
-                                    <div class="input-group margin-bottom-sm">
-                                        <span class="input-group-addon"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i></span>
-                                        <input class="form-control" type="text" placeholder="Date">
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-md-5">
+                                    <div class="input-group"> 
+                                    <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                    <input type="text" class="form-control" id="resdate" name="resdate" placeholder="Date">
+                                    
                                     </div>
+    
                                 </div>
-                                <div class="col">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i></span>
-                                        <input class="form-control" type="text" placeholder="Time">
+                                <div class="col-md-5">
+                                    <div class="input-group"> 
+                                    <div class="input-group-addon"><span class="fa fa-clock-o"></span></div>
+                                    <input type="text" class="form-control" id="restime" name="restime" placeholder="Time">
+                                    
                                     </div>
+    
+                                </div>
+                            </div>
+                                <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <input type="submit" class="btn btn-primary" value="Reserve">
                                 </div> 
-                        </div>    
-                        <div class="row offset-md-3">
-                        <button type="submit" class="btn btn-primary">Reserve</button>
-                        </div>    
-                    </div>
+                                </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
-        </div>
-    </div>    
+    </div>  
 
     <footer class="footer">
         <div class="container">
