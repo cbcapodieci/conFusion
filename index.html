@@ -77,20 +77,115 @@
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                    <p>We take inspiration from the World's best cuisines, 
+                        and create a unique fusion experience. Our lipsmacking 
+                        creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
+
+                <!-- button trigger modal -->
                 <div class="col col-sm-3 align-self-center">
-                    <a class="btn btn-warning btn-sm btn-block" 
-                    data-toggle="tooltip" data-html="true"
-                    title="Or Call us at<br><strong>+852 12345678</strong>"
-                    data-placement="bottom" href="#reservetable">
-                    Reserve a Table</a>
-                </div> 
-            </div>
-        </div>
+                <button type="button" class="btn btn-warning btn-block" data-toggle="modal" 
+                data-target=#reservetable>Reserve a Table</button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="reservetable">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h5 class="modal-title" style="color:#000"><strong>Reserve a Table</strong></h5>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <!-- Modal Body -->
+                            <div class="modal-body">
+                                <div class="col">
+                                    <div class="form-group row"> <!-- Number of guests -->
+                                        <label class="col col-md-2 col-form-label" style="color:#000">Number of Guests</label>
+                                        <div class="col-md-10">
+                                        <div class="form-check form-check-inline">
+                                                <label class="form-check-label" style="color:#000">
+                                                    <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck1">
+                                                    1
+                                                </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label" style="color:#000">
+                                                <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck2">
+                                                    2
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label" style="color:#000">
+                                                <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck3">
+                                                    3
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label" style="color:#000">
+                                                <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck4">
+                                                    4
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label" style="color:#000">
+                                                <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck5">
+                                                    5
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label" style="color:#000">
+                                                <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck6">
+                                                    6
+                                            </label>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row"> <!-- Section -->
+                                        <label class="col-md-2 col-form-label" style="color:#000">Section</label>
+                                        <div class="col-md-5">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-success active">
+                                                    <input type="radio" name="section" id="nonsmoking" autocomplete="off" checked>Non-Smoking>
+                                                </label>
+                                                <label class="btn btn-danger">
+                                                        <input type="radio" name="section" id="smoking" autocomplete="off">Smoking>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row"> <!-- Date and Time -->
+                                        <label class="col-md-2 col-form-label" style="color:#000">Date and Time</label>
+                                        <div class="col-md-5">
+                                            <div class="input-group"> 
+                                            <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                            <input type="text" class="form-control" id="resdate" name="resdate" placeholder="Date">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="input-group"> 
+                                            <div class="input-group-addon"><span class="fa fa-clock-o"></span></div>
+                                            <input type="text" class="form-control" id="restime" name="restime" placeholder="Time">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>           
+                            </div>
+                            <!-- Modal Footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Reserve Table</button>                                
+                            </div>
+                        </div> <!-- Modal content -->
+                    </div> <!-- Modal dialog -->
+                </div> <!-- close Modal -->
+            </div> <!-- close header row -->
+        </div> <!-- close header container -->
     </header>
 
     <div class="container">
@@ -169,8 +264,6 @@
                 </div>
             </div>
         </div>
-
-
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3 flex-first">
                 <h3>This Month's Promotions</h3>
@@ -203,84 +296,7 @@
                 </div>
             </div>
         </div>
-
-    <div class="row row-content">
-        <div class="col-12 col-sm-8 offset-md-2">
-            <div id="reservetable" class="card">
-                <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                <div class="card-block">
-                    <form>
-                        <div class="form-group row">
-                            <label class="col col-md-2 col-form-label">Number of Guests</label>
-                            <div class="col-md-10">
-                            <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck1">
-                                        1
-                                    </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck2">
-                                        2
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck3">
-                                        3
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck4">
-                                        4
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck5">
-                                        5
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="rdioCheck" id="rdioCheck6">
-                                        6
-                                </label>
-                            </div>
-                            </div>
-                        </div>
-                            <div class="form-group row">
-                                <label class="col-md-2 col-form-label">Date and Time</label>
-                                <div class="col-md-5">
-                                    <div class="input-group"> 
-                                    <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
-                                    <input type="text" class="form-control" id="resdate" name="resdate" placeholder="Date">
-                                    
-                                    </div>
-    
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="input-group"> 
-                                    <div class="input-group-addon"><span class="fa fa-clock-o"></span></div>
-                                    <input type="text" class="form-control" id="restime" name="restime" placeholder="Time">
-                                    
-                                    </div>
-    
-                                </div>
-                            </div>
-                                <div class="form-group row">
-                                <div class="offset-md-2 col-md-10">
-                                    <input type="submit" class="btn btn-primary" value="Reserve">
-                                </div> 
-                                </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>  
-</div>
+</div> 
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -328,12 +344,7 @@
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script>
-        $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-         });
-    </script>
-
+    
 </body>
 
 </html>
