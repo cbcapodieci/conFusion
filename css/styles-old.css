@@ -1,6 +1,6 @@
 .row-header {
     margin: 0px auto;
-    padding: 0px auto;
+    padding: 0px;
 }
 
 .row-content {
@@ -55,8 +55,8 @@ body {
 
 .carousel-item img {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     min-height: 300px;
 }
 
