@@ -1,4 +1,4 @@
-$lt-gray: #ddd;
+$lt-gray:#ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
@@ -59,8 +59,8 @@ body {
         height: $carousel-item-height;
         img {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 0px;
+            left: 0px;
             min-height: 300px;
         }
     }
