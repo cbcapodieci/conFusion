@@ -2,19 +2,20 @@
 <html lang="en">
 
 <head>
-        <!-- Required meta tags always come first -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"><title>Ristorante Con Fusion</title>
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/bootstrap-social.css">
-        <link rel="stylesheet" href="css/styles.css">
-        
-        <title>Ristorante Con Fusion</title>
-    </head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"><title>Ristorante Con Fusion</title>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+    <!-- <title>Ristorante Con Fusion</title> -->
+</head>
 
 <body>
     <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
@@ -23,13 +24,13 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" height="30" width="41"></a>
             <div class="collapse navbar-collapse" id="Navbar"> 
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"</span>Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"</span>Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
                 <span class="navbar-text">
                     <a data-toggle="modal" data-target="#loginModal">
@@ -82,7 +83,7 @@
                         creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col col-sm-3 align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
+                    <img src="img/logo.png" alt="logo" class="img-fluid">
                 </div>
 
                 <!-- button trigger modal -->
@@ -150,10 +151,10 @@
                                         <div class="col-md-5">
                                             <div class="btn-group" data-toggle="buttons">
                                                 <label class="btn btn-success active">
-                                                    <input type="radio" name="section" id="nonsmoking" autocomplete="off" checked>Non-Smoking>
+                                                    <input type="radio" name="section" id="nonsmoking" checked>Non-Smoking>
                                                 </label>
                                                 <label class="btn btn-danger">
-                                                        <input type="radio" name="section" id="smoking" autocomplete="off">Smoking>
+                                                        <input type="radio" name="section" id="smoking">Smoking>
                                                 </label>
                                             </div>
                                         </div>
@@ -299,7 +300,8 @@
                 </div>
             </div>
         </div>
-</div> 
+    </div> 
+</div>
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -343,13 +345,13 @@
     </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
     <!-- jquery code for play/pause bottons in carousel -->
     <script src="js/scripts.js"></script>
-
+    <!-- endbuild -->
 </body>
 
 </html>
