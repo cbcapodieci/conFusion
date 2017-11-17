@@ -70,3 +70,21 @@ body {
     position: absolute;
     bottom: 0px;
 }
+
+.modal-header {
+    color: floralwhite;
+    background-color: $background-dark;
+    button {
+        color: floralwhite;
+    }
+}
+
+.modal-body {
+    color: black;
+    background-color: $background-pale;
+}
+
+.modal-footer {
+    color: black;
+    background-color: $background-pale;
+}

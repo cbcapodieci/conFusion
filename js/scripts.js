@@ -13,3 +13,15 @@ $(document).ready(function(){
         }
     });
 });
+
+$(document).ready(function(){
+    $("#Myreservetable").click(function(){
+        $("#reservetable").modal();
+    });
+});
+
+$(document).ready(function(){
+    $("#loginBtn").click(function(){
+        $("#loginModal").modal();
+    });
+});
